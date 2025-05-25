@@ -22,9 +22,9 @@ body::before {
   z-index: -1;
 }
 
-header {
-  background-color: #333;
-  color: white;
+header, footer {
+  background-color: #8C2C00; /* Darker burnt orange */
+  color: #FFFAF0; /* Light cream text for contrast */
   padding: 1rem 2rem;
 }
 
@@ -63,21 +63,36 @@ main {
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
 }
 
+/* Section headings */
 h2 {
-  color: #FFD700;
+  color: #FFD700; /* Gold */
 }
 
+/* Text styles */
 p, li {
-  color: #fff;
+  color: #FFFAF0; /* Light cream for contrast */
+  line-height: 1.6;
 }
 
+/* Image styles */
 img {
   max-width: 200px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Contact link styles */
+a[href^="mailto:"],
+a[href^="https"] {
+  color: #FFD700; /* Gold accent links */
+  text-decoration: underline;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="https"]:hover {
+  color: #FFFAF0; /* Light cream on hover */
 }
